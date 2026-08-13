@@ -2,6 +2,7 @@
   internal:
 services:
   fe:
+    image: massielcr/counter-compose:1.0
     build: .
     command: dotnet CounterCompose.dll
     ports:
