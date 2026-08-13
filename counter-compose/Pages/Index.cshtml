@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Counter</h1>
+    <div class="display-1 text-primary my-3 fw-bold">
+        @Model.CounterValue
+    </div>
+    <p class="text-secondary small">Stored and incremented dynamically inside Redis Cache.</p>
+</div>

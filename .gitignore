@@ -1,0 +1,42 @@
+# ==========================================
+# 1. Project Build Outputs (All Sub-Projects)
+# ==========================================
+[Bb]in/
+[Oo]bj/
+
+# ==========================================
+# 2. Docker & Containerization
+# ==========================================
+.docker/
+docker-compose.override.yml
+*.log
+logs/
+
+# ==========================================
+# 3. Environment & Secrets (Never Commit!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.user
+*.userosscache
+*.suo
+
+# ==========================================
+# 4. IDE and Editor Settings
+# ==========================================
+.vscode/
+.idea/
+*.sln.docstates
+
+# ==========================================
+# 5. Ignore hidden Visual Studio cache folders
+# ==========================================
+.vs/
+
+# ==========================================
+# 6. Operating System Junk
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini

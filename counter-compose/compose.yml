@@ -1,0 +1,15 @@
+﻿networks:
+  internal:
+services:
+  fe:
+    build: .
+    command: dotnet CounterCompose.dll
+    ports:
+      - target: 8080
+        published: 5555
+    networks:
+      - internal
+  be:
+    image: "redis:alpine"
+    networks:
+      internal:
