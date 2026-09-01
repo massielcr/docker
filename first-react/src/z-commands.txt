@@ -1,0 +1,11 @@
+-- build - to be able to see /app/build
+docker build --target production-builder -t massielcr/first-react:build .  
+docker run -it --entrypoint sh --name first-react-build massielcr/first-react:build
+
+-- development - hot reload working:
+docker build --target development -t massielcr/first-react:dev .  
+docker run -it -p 3000:3000 -v ${PWD}:/app -v /app/node_modules --name first-react-dev massielcr/first-react:dev
+
+-- production
+docker build --target production -t massielcr/first-react:prod .
+docker run -it -p 80:80 --name first-react-prod massielcr/first-react:prod
