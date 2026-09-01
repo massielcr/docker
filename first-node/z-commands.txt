@@ -1,0 +1,2 @@
+docker build -t massielcr/first-node:dev .
+docker run --name first-node massielcr/first-node:dev

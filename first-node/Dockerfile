@@ -9,3 +9,5 @@ RUN useradd -ms /bin/bash carvedrock
 COPY version.txt /opt/app/
 
 USER carvedrock
+
+CMD ["cowsay", "Hello from CarvedRock!"]
